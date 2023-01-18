@@ -1,3 +1,7 @@
+CI Test demo
+
+[![Build status](https://ci.appveyor.com/api/projects/status/dm5gokk75oefif42?svg=true)](https://ci.appveyor.com/project/MarShal69/classes-inheritance-2)
+
 # Домашнее задание к лекции «Классы, наследование»
 
 ### **Важные моменты** 
