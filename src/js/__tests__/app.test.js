@@ -17,15 +17,8 @@ test('number of characters in the name', () => {
   }).toThrowError('имя должно содержать от 2 до 10 сиволов');
 });
 
-test('check Character error type', () => {
-  expect(() => {
-    // eslint-disable-next-line no-unused-vars
-    const ch1 = new Character('Halk', 'Bowmanus');
-  }).toThrowError('тип не установлен');
-});
-
 test('level up', () => {
-  const bowman = new Bowman('Halk', 'Bowman');
+  const bowman = new Bowman('Halk');
   const expected = {
     name: 'Halk',
     type: 'Bowman',
@@ -40,14 +33,14 @@ test('level up', () => {
 
 test('check Character error type', () => {
   expect(() => {
-    const bowman = new Bowman('Halk', 'Bowman');
+    const bowman = new Bowman('Halk');
     bowman.level = 0;
     bowman.levelUp();
   }).toThrowError('you cant level up the dead');
 });
 
 test('изменение жизни персонажа после урона', () => {
-  const bowman = new Bowman('Halk', 'Bowman');
+  const bowman = new Bowman('Halk');
   bowman.damage(10);
   const expected = {
     name: 'Halk',
@@ -61,9 +54,9 @@ test('изменение жизни персонажа после урона', (
   expect(bowman).toEqual(expected);
 });
 
-test('зменение жизни персонажа после урона - вывод ошибки при health < 0', () => {
+test('изменение жизни персонажа после урона - вывод ошибки при health < 0', () => {
   expect(() => {
-    const bowman = new Bowman('Halk', 'Bowman');
+    const bowman = new Bowman('Halk');
     bowman.health = -1;
     bowman.damage(10);
   }).toThrowError('character is dead');

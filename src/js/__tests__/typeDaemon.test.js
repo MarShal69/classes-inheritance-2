@@ -1,7 +1,7 @@
 import Daemon from '../typeDaemon';
 
 test('создание класса наследника Daemon', () => {
-  const daemon = new Daemon('Jhon', 'Daemon');
+  const daemon = new Daemon('Jhon');
   const expected = {
     name: 'Jhon',
     type: 'Daemon',

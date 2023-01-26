@@ -1,7 +1,7 @@
 import Swordsman from '../typeSwordsman';
 
 test('создание класса наследника Swordsman', () => {
-  const swordsman = new Swordsman('Mag', 'Swordsman');
+  const swordsman = new Swordsman('Mag');
   const expected = {
     name: 'Mag',
     type: 'Swordsman',

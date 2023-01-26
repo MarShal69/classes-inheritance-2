@@ -1,7 +1,7 @@
 import Undead from '../typeUndead';
 
 test('создание класса наследника Undead', () => {
-  const undead = new Undead('Storm', 'Undead');
+  const undead = new Undead('Storm');
   const expected = {
     name: 'Storm',
     type: 'Undead',

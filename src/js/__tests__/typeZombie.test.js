@@ -1,7 +1,7 @@
 import Zombie from '../typeZombie';
 
 test('создание класса наследника Zombie', () => {
-  const zombie = new Zombie('Jho', 'Zombie');
+  const zombie = new Zombie('Jho');
   const expected = {
     name: 'Jho',
     type: 'Zombie',

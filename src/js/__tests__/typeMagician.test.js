@@ -1,7 +1,7 @@
 import Magician from '../typeMagician';
 
 test('создание класса наследника Magician', () => {
-  const swordsman = new Magician('Wind', 'Magician');
+  const swordsman = new Magician('Wind');
   const expected = {
     name: 'Wind',
     type: 'Magician',
